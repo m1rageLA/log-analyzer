@@ -1,0 +1,40 @@
+[package]
+name = "log_analyzer"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+edition = "2021"
+
+[dependencies]
+# CLI
+clap = { version = "4.5", features = ["derive"] }
+regex = "1.10"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+anyhow = "1.0"
+walkdir = "2.5"
+# Charts for CLI export
+plotters = { version = "0.3.7", default-features = false, features = ["bitmap_backend","chrono","ttf","line_series"] }
+
+plotters-bitmap = "0.3"
+# GUI (eframe/egui)
+eframe = { version = "0.28", optional = true }
+egui = { version = "0.28", optional = true }
+egui_extras = { version = "0.28", optional = true }
+rfd = { version = "0.15", optional = true }
+egui_plot = { version = "0.28", optional = true }
+
+[features]
+default = ["gui"]
+
+# build with: cargo build --no-default-features  (CLI only)
+# or disable GUI on servers without graphical libs
+cli = []
+gui = ["eframe","egui","egui_extras","egui_plot","rfd"]
+ # <— добавьте egui_plot
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

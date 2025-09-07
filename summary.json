@@ -1,0 +1,35 @@
+{
+  "total_entries": 5,
+  "counts": {
+    "info": 1,
+    "warning": 2,
+    "error": 2
+  },
+  "malformed_lines": 16,
+  "first_log": "2025-09-05 10:15:35",
+  "last_log": "2025-09-06 09:15:00",
+  "common_errors": [
+    [
+      "Background job failed",
+      1
+    ],
+    [
+      "Failed to connect to DB",
+      1
+    ]
+  ],
+  "timeline": [
+    [
+      "2025-09-05 10:00:00",
+      1
+    ],
+    [
+      "2025-09-05 11:00:00",
+      1
+    ],
+    [
+      "2025-09-06 09:00:00",
+      3
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+2025-09-05 09:00:00,001 INFO Starting service
+2025-09-05 09:00:01,250 WARNING Disk space at 85%
+2025-09-05 09:00:02,999 ERROR Failed to connect to DB
+2025-09-05 10:15:33,101 INFO Retrying connection
+2025-09-05 10:15:34,777 ERROR Failed to connect to DB
+Sep  5 10:15:35 host app[999]: [WARN] High memory usage
+Sep  5 11:00:00 host app[999]: [ERROR] Failed to connect to DB
+
+2025-09-06 08:45:00,123 INFO Daily maintenance started
+2025-09-06 08:45:05,555 WARNING Low memory on node-1
+2025-09-06 08:45:10,777 ERROR Connection timeout
+2025-09-06 08:50:00,001 INFO Daily maintenance finished
+
+Sep  6 09:00:00 host app[777]: [INFO] Background job started
+Sep  6 09:10:00 host app[777]: [WARN] Background job is slow
+Sep  6 09:15:00 host app[777]: [ERROR] Background job failed
+
+2025-09-07 12:00:00,000 ERROR Failed to connect to DB
+2025-09-07 12:00:10,000 ERROR Failed to connect to DB
+2025-09-07 12:00:20,000 ERROR Failed to connect to DB
+2025-09-07 12:05:00,000 INFO Service recovered
